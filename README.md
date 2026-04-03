@@ -1,6 +1,6 @@
 # GDIM33 Vertical Slice
 ## Milestone 1 Devlog
-Milestone 1 Devlog goes here.
+Alejandra Perez
 ## Milestone 2 Devlog
 Milestone 2 Devlog goes here.
 ## Milestone 3 Devlog
