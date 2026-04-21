@@ -6,9 +6,9 @@ public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _mouseSensitivity;
+    [SerializeField] private GameObject cursorui;
     
     
-    public GameObject cursorui;
     private Transform _cameraTrans;
     private float _rotationX;
     private float _rotationY;
