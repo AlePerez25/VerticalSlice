@@ -1433,6 +1433,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 3ea946212e7416c4f8a3e7a404166265,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 15ecdbec0468bac4ca131f075f80af8a, type: 2}
     - target: {fileID: 7751348785765063920, guid: 3ea946212e7416c4f8a3e7a404166265,
         type: 3}
       propertyPath: m_LocalPosition.y
