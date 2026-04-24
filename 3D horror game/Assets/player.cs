@@ -49,7 +49,7 @@ public class player : MonoBehaviour
             }
         }
 
-        _pointsText.text = "health: " + health;
+        _pointsText.text = "Health: " + health;
 
     }
 
@@ -58,7 +58,9 @@ public class player : MonoBehaviour
         health += amount;
 
         if (health > Max)
-        health = Max;
+        {
+            health = Max;
+        }
     }
 
     public void TakeDamage(int amount)
@@ -66,6 +68,10 @@ public class player : MonoBehaviour
         health -= amount;
 
         if (health < Min)
+        {
             health = Min;
+        }
+
+        
     }
 }

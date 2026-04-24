@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 56.44771, w: 23.626709}
+  m_margin: {x: 0, y: 0, z: -17.235046, w: 23.626709}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3002,8 +3002,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.2564461, z: 1}
-  m_Center: {x: 0, y: 1.1433369, z: 0}
+  m_Size: {x: 0.32408142, y: 1.9126965, z: 0.34051514}
+  m_Center: {x: -0.0060653687, y: 0.9714621, z: -0.024017334}
 --- !u!114 &1319329461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3016,6 +3016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6fb0c977a7ede4f852c262e0b945d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1347418351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8408592595719101861, guid: 7c0be212a310e324d9f1c3d0a9ab5182,
@@ -4226,9 +4227,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointsText: {fileID: 1195640572}
   cursorui: {fileID: 663334481}
-  health: 50
+  health: 100
   Max: 100
   Min: 0
+  timer: 0
 --- !u!1 &1980345860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8408592595719101861, guid: 7c0be212a310e324d9f1c3d0a9ab5182,
