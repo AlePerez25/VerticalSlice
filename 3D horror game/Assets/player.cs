@@ -14,6 +14,7 @@ public class player : MonoBehaviour
 
     public int health = 100;
     public int Max = 100;
+    public int Min = 0;
 
 
     // Start is called before the first frame update
@@ -58,8 +59,13 @@ public class player : MonoBehaviour
 
         if (health > Max)
         health = Max;
+    }
 
-        //_pointsText.text = "points: " + health;
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
 
+        if (health < Min)
+            health = Min;
     }
 }
