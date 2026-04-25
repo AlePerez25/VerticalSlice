@@ -11,7 +11,10 @@ public class player : MonoBehaviour
     public GameObject cursorui;
     private Transform _cameraTrans;
     
-
+    public ParticleSystem muzzle;
+    public float impact = 0;
+    public GameObject Enemy;
+    
     public int health = 100;
     public int Max = 100;
     public int Min = 0;
@@ -40,6 +43,7 @@ public class player : MonoBehaviour
             // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Physics.Raycast.html
             if (Physics.Raycast(ray, out hit, 5f))
             {
+                
                 ItemPickUp pickup = hit.collider.GetComponent<ItemPickUp>();
 
                 if (pickup != null)
@@ -47,6 +51,28 @@ public class player : MonoBehaviour
                     pickup.Pickup();
                 }
             }
+
+            if (Physics.Raycast(ray, out hit, 15f) && hit.collider.CompareTag("Monster"))
+            {
+                muzzle.Play();
+
+                Debug.Log("pinche perro");
+
+                monster zombie = hit.collider.GetComponent<monster>();
+
+                if(zombie != null)
+                {
+                    Empuja();
+                }
+
+            }
+
+
+        }
+
+        void Empuja()
+        {
+            Enemy.transform.position += transform.forward * Time.deltaTime * impact;
         }
 
         _pointsText.text = "Health: " + health;
