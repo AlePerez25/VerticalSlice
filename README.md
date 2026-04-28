@@ -7,6 +7,9 @@ Alejandra Perez
 
     This will be connected in the future to the player quest system since it will be the biggest impediment/challenge for the player. Thanks to this movement and detection, the player will be able to run into the monster around the terrain and chases will have to occur. It is also connected to the player health reduction system that I made in a C# script, when the monster gets very close to the player and collides with them the player loses health and is forced to look for safety kits to recover a percentage of health. For the break down I only added one more box where I briefly explain how it works and what things it activates, this is connected to the navmesh and animations boxes.
 
+   Game break-down:
+   <img width="1498" height="1128" alt="Screenshot 2026-04-28 113659" src="https://github.com/user-attachments/assets/5950310a-f0e3-4571-99b5-aadcc46f7849" />
+
 
 ## Milestone 2 Devlog
 Milestone 2 Devlog goes here.
