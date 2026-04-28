@@ -20,4 +20,15 @@ Milestone 4 Devlog goes here.
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets
-- Cite any external assets used here!
+
+Monster:
+https://assetstore.unity.com/packages/3d/characters/humanoids/humans/zombie-1-low-poly-232270
+
+Camping:
+https://assetstore.unity.com/packages/3d/environments/camping-low-poly-pack-lite-322826
+https://assetstore.unity.com/packages/3d/props/pandazole-survival-crafting-low-poly-pack-208575 
+https://assetstore.unity.com/packages/3d/vegetation/trees/low-poly-trees-pack-lite-free-stylized-nature-environment-assets-295464 
+
+Terrain/Sky:
+https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014
+https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-textures-free-271990
