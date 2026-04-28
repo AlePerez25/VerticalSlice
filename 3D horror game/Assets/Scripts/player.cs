@@ -8,8 +8,8 @@ using TMPro;
 public class player : MonoBehaviour
 {
     [SerializeField] private TMP_Text _pointsText;
-    [SerializeField]public GameObject cursorui;
-    [SerializeField]private Transform _cameraTrans;
+    [SerializeField] public GameObject cursorui;
+    [SerializeField] private Transform _cameraTrans;
     
     public ParticleSystem muzzle;
     public float impact = 0;

@@ -504,10 +504,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -6136,7 +6136,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -292.1, y: 207.5}
+  m_AnchoredPosition: {x: -390, y: 270}
   m_SizeDelta: {x: 147.0528, y: 36.8696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599697299
@@ -8001,7 +8001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6fb0c977a7ede4f852c262e0b945d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 5
 --- !u!1 &1347418351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8408592595719101861, guid: 7c0be212a310e324d9f1c3d0a9ab5182,
@@ -9682,9 +9682,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointsText: {fileID: 1195640572}
   cursorui: {fileID: 663334481}
-  _cameraTrans: {fileID: 0}
+  _cameraTrans: {fileID: 330585546}
   muzzle: {fileID: 297916725}
-  impact: 500
+  impact: 750
   Enemy: {fileID: 1319329448}
   health: 100
   Max: 100
