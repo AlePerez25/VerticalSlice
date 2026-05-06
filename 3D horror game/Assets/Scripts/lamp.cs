@@ -9,6 +9,12 @@ public class Lamp : MonoBehaviour
     public GameObject luzBlue;
     public GameObject luzRed;
     public GameObject luzYellow;
+    public GameObject BlueMush;
+    public GameObject YellMush;
+    public GameObject RedMush;
+
+
+
 
 
 
@@ -18,23 +24,49 @@ public class Lamp : MonoBehaviour
         //turn on/off lamp with the same key in this case "Q"
         if(Input.GetKeyDown(KeyCode.Q))
         {
-            luzBlanca.SetActive(!luzBlanca.activeSelf);
+            NoMushroom();
+            Apagar();
+            luzBlanca.SetActive(true);
         }
 
-        /*if(Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.Z))
         {
-            luzBlue.SetActive(!luzBlue.activeSelf);
-        }*/
-
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            luzRed.SetActive(!luzRed.activeSelf);
+            Apagar();
+            luzBlue.SetActive(true);
+            NoMushroom();
+            BlueMush.SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.X))
         {
-            luzYellow.SetActive(!luzYellow.activeSelf);
+            Apagar();
+            luzRed.SetActive(true);
+            NoMushroom();
+            RedMush.SetActive(true);
         }
+
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            Apagar();
+            luzYellow.SetActive(true);
+            NoMushroom();
+            YellMush.SetActive(true);
+        }
+    }
+
+    public void Apagar()
+    {
+        luzBlanca.SetActive(false);
+        luzBlue.SetActive(false);
+        luzRed.SetActive(false);
+        luzYellow.SetActive(false);
+    }
+
+    public void NoMushroom()
+    {
+        YellMush.SetActive(false);
+        RedMush.SetActive(false);
+        BlueMush.SetActive(false);
     }
 
     

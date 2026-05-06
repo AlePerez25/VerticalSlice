@@ -185,6 +185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yellow
       objectReference: {fileID: 0}
+    - target: {fileID: 879604896163107470, guid: 39bc23e3066198c4fb2baba22e7db4f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -825,6 +830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682981448004401355, guid: 502a90ddd1145ca439acd5386ec4fea7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3346189666821055089, guid: 502a90ddd1145ca439acd5386ec4fea7,
         type: 3}
@@ -6436,7 +6446,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 6813
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -12353,6 +12363,9 @@ MonoBehaviour:
   luzBlue: {fileID: 36317296}
   luzRed: {fileID: 1642542155}
   luzYellow: {fileID: 139983244}
+  BlueMush: {fileID: 1731682525}
+  YellMush: {fileID: 669103498}
+  RedMush: {fileID: 1069189676}
 --- !u!1001 &908736380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18453,6 +18466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 3420320543871416819, guid: cc102987a9ae35840b976eef1dfa98e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
