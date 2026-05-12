@@ -11,7 +11,6 @@ public class Inventory_Manager : MonoBehaviour
     public Transform Content;
     public GameObject InventoryItem;
     public int Max = 4;
-
     private void Awake()
     {
         if (Instance != null &&  Instance != this)

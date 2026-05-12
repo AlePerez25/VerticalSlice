@@ -13,12 +13,6 @@ public class Lamp : MonoBehaviour
     public GameObject YellMush;
     public GameObject RedMush;
 
-
-
-
-
-
-
     public void Update()
     {   
         //turn on/off lamp with the same key in this case "Q"
@@ -34,7 +28,11 @@ public class Lamp : MonoBehaviour
             Apagar();
             luzBlue.SetActive(true);
             NoMushroom();
-            BlueMush.SetActive(true);
+
+            if(BlueMush != null)
+            {
+                BlueMush.SetActive(true);
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.X))
@@ -42,7 +40,11 @@ public class Lamp : MonoBehaviour
             Apagar();
             luzRed.SetActive(true);
             NoMushroom();
-            RedMush.SetActive(true);
+
+            if(RedMush != null)
+            {
+                RedMush.SetActive(true);
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.C))
@@ -50,7 +52,11 @@ public class Lamp : MonoBehaviour
             Apagar();
             luzYellow.SetActive(true);
             NoMushroom();
-            YellMush.SetActive(true);
+
+            if(YellMush != null)
+            {
+                YellMush.SetActive(true);
+            }
         }
     }
 
@@ -64,13 +70,20 @@ public class Lamp : MonoBehaviour
 
     public void NoMushroom()
     {
-        YellMush.SetActive(false);
-        RedMush.SetActive(false);
-        BlueMush.SetActive(false);
+        if(YellMush != null)
+        {
+            YellMush.SetActive(false);
+        }
+
+        if(RedMush != null)
+        {
+            RedMush.SetActive(false); 
+        }
+
+        if(BlueMush != null)
+        {
+            BlueMush.SetActive(false);
+        }
     }
-
-    
-
-
 
 }

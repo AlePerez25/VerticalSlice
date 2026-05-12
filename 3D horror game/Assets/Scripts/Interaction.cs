@@ -7,15 +7,24 @@ public class ItemPickUp : MonoBehaviour
     // Amount of haalth that the Ammo would recover for the player
     public int healAmount = 20;
     public Item Item;
+    private bool yaEsta = false;
 
     
     public void Pickup()
     { 
+        if(yaEsta)
+        {
+            return;
+        }
+
+        Debug.Log("se incio");
+
         // This GameObeject has tag "Player"?
         GameObject playerO = GameObject.FindGameObjectWithTag("Player");
 
         if (playerO == null)
         {
+            yaEsta = false;
             return;
         }
 
@@ -23,6 +32,7 @@ public class ItemPickUp : MonoBehaviour
 
         if (playerS == null)
         {
+            yaEsta = false;
             return;
         }
                 
@@ -39,6 +49,10 @@ public class ItemPickUp : MonoBehaviour
         if (added)
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            yaEsta = false;
         }
 
     }
