@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public static class DisplayMenu
+public class MainMenu : MonoBehaviour
 {
-    public static string DisMenu = "DisplayMenu";
+    public void StartGame()
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
 
-
-
-
+    //invoke()
 }

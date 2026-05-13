@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEngine.UI;
+
 
 
 
@@ -10,6 +13,7 @@ public class player : MonoBehaviour
     [SerializeField] private TMP_Text _pointsText;
     [SerializeField] public GameObject cursorui;
     [SerializeField] private Transform _cameraTrans;
+    [SerializeField] private GameObject Player;
     
     public ParticleSystem muzzle;
     public float impact = 0;
@@ -19,11 +23,20 @@ public class player : MonoBehaviour
     public int Max = 100;
     public int Min = 0;
 
+    public Image overlay;
+    public float duration;
+    public float fadeSpeed;
+
+    private float durationTimer;
+
+
 
     void Start()
     {
         _cameraTrans = Camera.main.transform;
         cursorui.SetActive(true);
+        overlay.color = new Color(overlay.color.r,overlay.color.g,overlay.color.b, 0);
+
     }
 
     void Update()
@@ -48,12 +61,12 @@ public class player : MonoBehaviour
                 if (pickup != null)
                 {
                     //PickUp item
-                    pickup.Pickup();
+                    pickup.Pickup();                   
                 }
             }
 
             //For shoot monster
-            if (Physics.Raycast(ray, out hit, 15f) && hit.collider.CompareTag("Monster"))
+            if (Physics.Raycast(ray, out hit, 30f) && hit.collider.CompareTag("Monster"))
             {
                 //Play muzzle particle
                 muzzle.Play();
@@ -83,6 +96,17 @@ public class player : MonoBehaviour
         //This updates the UI for health.
         _pointsText.text = "Health: " + health;
 
+        if(overlay.color.a > 0)
+        {
+            durationTimer += Time.deltaTime;
+            if(durationTimer > duration)
+            {
+                float tempAlha = overlay.color.a;
+                tempAlha -= Time.deltaTime * fadeSpeed;
+                overlay.color = new Color(overlay.color.r,overlay.color.g,overlay.color.b, tempAlha);
+            }
+        }    
+
     }
 
     // method call by interaction script if payer pick up a ammo for more life.
@@ -106,6 +130,8 @@ public class player : MonoBehaviour
             health = Min;
         }
 
+        durationTimer = 0;
+        overlay.color = new Color(overlay.color.r,overlay.color.g,overlay.color.b, 1);
         
     }
 }
