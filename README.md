@@ -58,11 +58,14 @@ Utilize Visual Scripting -> C# Script. For me, it was very complicated to find a
 
 The way these connect is that when the player clicks the button, it invokes the method indicated inside the Invoke node “StartGame()” which says to load the scene. There is also a node dedicated to assigning the GameObject that contains this script (MenuManager).
 
+<img width="545" height="415" alt="Screenshot 2026-05-14 233624" src="https://github.com/user-attachments/assets/5c2c6f6c-f3df-4721-bb27-0fd89711f9e7" />
+
+
 #### Question 4:
 
 I would like you to grade my Unity Timeline system, which is located in the “Menu” Scene. The Timeline is assigned to the GameObject “TimeLine” and involves the images "cabeza 1” and “cabeza 2.”
-You could also grade my Scriptable Object Unity system, which was created for my Inventory system. 
 
+You could also grade my Scriptable Object Unity system, which was created for my Inventory system. 
 All my Scriptable Objects are inside the folder called “mushrooms.” The scripts “ItsIte,” “Inventory_Manager,” “Interaction,” and “Mushrooms” are involved with these Scriptable Objects and the inventory system.
 
 
