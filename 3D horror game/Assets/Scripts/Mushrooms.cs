@@ -10,4 +10,5 @@ public class Item : ScriptableObject
     public Sprite icon;
     public GameObject prefab;
     public bool isMushroom;
+    public bool IsFilter;
 }

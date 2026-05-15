@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Inventory_Manager : MonoBehaviour
 {
@@ -10,7 +12,10 @@ public class Inventory_Manager : MonoBehaviour
     public List<Item> Items = new List<Item>();
     public Transform Content;
     public GameObject InventoryItem;
-    public int Max = 4;
+    public int Max = 8;
+
+    public bool IsFilter;
+
     private void Awake()
     {
         if (Instance != null &&  Instance != this)
@@ -26,13 +31,17 @@ public class Inventory_Manager : MonoBehaviour
     {
         if (Items.Count >= Max)
         {
+            WinScene();
             return false;
         }
         
-
         Items.Add(item);
 
-        ListItem();
+        if(!item.IsFilter)
+        {
+            ListItem();
+        }
+
         return true;
     }
 
@@ -55,6 +64,11 @@ public class Inventory_Manager : MonoBehaviour
         //This creates the new cube items of UI acording to the list of items
         foreach (var item in Items)
         {
+            if(item.IsFilter)
+            {
+                continue;
+            }
+
             //This creates the prefab child for "Content"
             GameObject obj = Instantiate(InventoryItem, Content);
 
@@ -67,6 +81,15 @@ public class Inventory_Manager : MonoBehaviour
             itemIcon.sprite = item.icon;
 
         }
-    } 
+    }
+
+    public bool HasItem(Item item)
+    {
+        return Items.Contains(item);
+    }
     
+    public void WinScene()
+    {
+        SceneManager.LoadScene(3);
+    }
 }

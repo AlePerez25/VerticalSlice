@@ -12,6 +12,9 @@ public class Lamp : MonoBehaviour
     public GameObject BlueMush;
     public GameObject YellMush;
     public GameObject RedMush;
+    public Item Redfilter;
+    public Item Bluefilter;
+    public Item Yellowfilter;
 
     public void Update()
     {   
@@ -23,7 +26,7 @@ public class Lamp : MonoBehaviour
             luzBlanca.SetActive(true);
         }
 
-        if(Input.GetKeyDown(KeyCode.Z))
+        if(Input.GetKeyDown(KeyCode.Z) && Inventory_Manager.Instance.HasItem(Bluefilter))
         {
             Apagar();
             luzBlue.SetActive(true);
@@ -35,7 +38,7 @@ public class Lamp : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.X))
+        if(Input.GetKeyDown(KeyCode.X) && Inventory_Manager.Instance.HasItem(Redfilter))
         {
             Apagar();
             luzRed.SetActive(true);
@@ -47,7 +50,7 @@ public class Lamp : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.C))
+        if(Input.GetKeyDown(KeyCode.C) && Inventory_Manager.Instance.HasItem(Yellowfilter))
         {
             Apagar();
             luzYellow.SetActive(true);

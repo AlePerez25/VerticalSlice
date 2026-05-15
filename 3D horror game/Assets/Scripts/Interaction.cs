@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ItemPickUp : MonoBehaviour
 {   
     // Amount of haalth that the Ammo would recover for the player
@@ -36,13 +37,18 @@ public class ItemPickUp : MonoBehaviour
             return;
         }
                 
-        if(!Item.isMushroom)
+        if(!Item.isMushroom & !Item.IsFilter)
         {
             //This adds 20 point for the player healt if pick up.
             playerS.addhealth(healAmount);
             Destroy(gameObject);  
             return;  
         }
+
+        /*if(Item.IsFilter)
+        {
+            Destroy(gameObject);
+        }*/
 
         bool added = Inventory_Manager.Instance.Add(Item);
 
@@ -56,6 +62,5 @@ public class ItemPickUp : MonoBehaviour
         }
 
     }
-
 
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 
@@ -17,7 +19,7 @@ public class player : MonoBehaviour
     
     public ParticleSystem muzzle;
     public float impact = 0;
-    public GameObject Enemy;
+    public GameObject Enemy; 
     
     public int health = 100;
     public int Max = 100;
@@ -30,13 +32,11 @@ public class player : MonoBehaviour
     private float durationTimer;
 
 
-
     void Start()
     {
         _cameraTrans = Camera.main.transform;
         cursorui.SetActive(true);
         overlay.color = new Color(overlay.color.r,overlay.color.g,overlay.color.b, 0);
-
     }
 
     void Update()
@@ -94,7 +94,7 @@ public class player : MonoBehaviour
         }
         
         //This updates the UI for health.
-        _pointsText.text = "Health: " + health;
+        _pointsText.text = "Sanity: " + health;
 
         if(overlay.color.a > 0)
         {
@@ -125,13 +125,19 @@ public class player : MonoBehaviour
     {
         health -= amount;
 
-        if (health < Min)
+        if (health <= Min)
         {
             health = Min;
+            FinalScene();
         }
 
         durationTimer = 0;
         overlay.color = new Color(overlay.color.r,overlay.color.g,overlay.color.b, 1);
         
+    }
+
+    public void FinalScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }
