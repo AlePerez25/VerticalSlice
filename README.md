@@ -48,6 +48,23 @@ Small Steps:
 
 #### Question 2:
 
+    Definitely, it was helpful. Just like in the class activity, having an idea of what you are going to work on before starting makes everything more organized. I like it because I can begin generating ideas on how to create new features for the game. It is an easy way to organize the development process and something you can always go back to whenever you need guidance. Writing these ideas down also makes creativity and development flow more easily.
+
+    Next time, I would like to add more details and include a bigger variety of big steps to give myself more ideas about what sounds best to work on first and leave the simpler tasks for last.
+
+#### Question 3:
+
+Utilize Visual Scripting -> C# Script. For me, it was very complicated to find a way to implement this bridge between C# and Visual Scripting, therefore I only created a small visual graph dedicated to activating the Main Menu button and making it change to the next scene, the principal scene. I only used it to change from the Main Menu to the principal scene. For the other scenes, I did not use the same system because I did not want to mix everything together and create bigger problems. This system is located in my Main Menu Scene where the button inside the Canvas is the one I assigned the graph to. Instead of using the "OnButtonClick()" inside the object, I added it to the visual graph. Apart from that, I created a script inside the GameObject “Menu Manager” which contains the method "StartGame()". This method calls the scene change (principal scene).
+
+The way these connect is that when the player clicks the button, it invokes the method indicated inside the Invoke node “StartGame()” which says to load the scene. There is also a node dedicated to assigning the GameObject that contains this script (MenuManager).
+
+#### Question 4:
+
+I would like you to grade my Unity Timeline system, which is located in the “Menu” Scene. The Timeline is assigned to the GameObject “TimeLine” and involves the images "cabeza 1” and “cabeza 2.”
+You could also grade my Scriptable Object Unity system, which was created for my Inventory system. 
+
+All my Scriptable Objects are inside the folder called “mushrooms.” The scripts “ItsIte,” “Inventory_Manager,” “Interaction,” and “Mushrooms” are involved with these Scriptable Objects and the inventory system.
+
 
 
 ## Milestone 3 Devlog
