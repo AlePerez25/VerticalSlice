@@ -14,6 +14,8 @@ Alejandra Perez
 
 ## Milestone 2 Devlog
 
+Alejandra Perez
+
 #### Question 1:
 
 Milestone 2 Important Features
