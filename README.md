@@ -20,9 +20,9 @@ Milestone 2 Important Features
 
 Big Steps:
 
-    - Learn and create a Timeline for the game or for the Main Menu.
-    - Create a C# system to manage the light and filter system.
-    - Create a sanity system when the player is attacked by the zombie and hides inside the storag buildings around the map.
+- Learn and create a Timeline for the game or for the Main Menu.
+- Create a C# system to manage the light and filter system.
+- Create a sanity system when the player is attacked by the zombie and hides inside the storag buildings around the map.
 
 Small Steps:
 
