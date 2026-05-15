@@ -48,9 +48,9 @@ Small Steps:
 
 #### Question 2:
 
-    Definitely, it was helpful. Just like in the class activity, having an idea of what you are going to work on before starting makes everything more organized. I like it because I can begin generating ideas on how to create new features for the game. It is an easy way to organize the development process and something you can always go back to whenever you need guidance. Writing these ideas down also makes creativity and development flow more easily.
+Definitely, it was helpful. Just like in the class activity, having an idea of what you are going to work on before starting makes everything more organized. I like it because I can begin generating ideas on how to create new features for the game. It is an easy way to organize the development process and something you can always go back to whenever you need guidance. Writing these ideas down also makes creativity and development flow more easily.
 
-    Next time, I would like to add more details and include a bigger variety of big steps to give myself more ideas about what sounds best to work on first and leave the simpler tasks for last.
+Next time, I would like to add more details and include a bigger variety of big steps to give myself more ideas about what sounds best to work on first and leave the simpler tasks for last.
 
 #### Question 3:
 
