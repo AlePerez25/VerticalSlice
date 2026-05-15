@@ -45,11 +45,6 @@ public class ItemPickUp : MonoBehaviour
             return;  
         }
 
-        /*if(Item.IsFilter)
-        {
-            Destroy(gameObject);
-        }*/
-
         bool added = Inventory_Manager.Instance.Add(Item);
 
         if (added)
