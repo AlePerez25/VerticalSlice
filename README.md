@@ -13,7 +13,43 @@ Alejandra Perez
 
 
 ## Milestone 2 Devlog
-Milestone 2 Devlog goes here.
+
+#### Question 1:
+
+Milestone 2 Important Features
+
+Big Steps:
+
+    - Learn and create a Timeline for the game or for the Main Menu.
+    - Create a C# system to manage the light and filter system.
+    - Create a sanity system when the player is attacked by the zombie and hides inside the storag buildings around the map.
+
+Small Steps:
+
+1) Timeline:
+    - See if I can find the assets needed for my idea (shadows); if not, draw them myself.
+    - Watch recommended videos to understand Timeline better.
+    - Start working and try creating a simple Timeline while also adding music.
+    - Build and run the game to see how it works.
+
+2) light and filter system:
+    - Create Scriptable Objects for each filter.
+    - Find a way for the inventory list to communicate with the light script so we can know if a    specific object, in this case the filters, is inside the inventory.
+    - Create an if statement so the condition is: if the player presses key ? and filter ? is inside the inventory, activate this GameObject.
+    - Build and run the game to see if it works.
+
+3) Sanity system:
+    - Create an effect for when the player is attacked that represents the player’s insanity.
+    - Add storage buildings around the map and place a cube inside them with IsTrigger() activated so it detects the player inside and begins affecting their sanity.
+    - Find a way to stop the monster from entering these buildings.
+    - Add effects on the screen.
+    - Add a counter to the UI on the screen.
+    - Build and run the game to see if it works.
+
+#### Question 2:
+
+
+
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
