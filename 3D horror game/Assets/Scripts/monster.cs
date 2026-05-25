@@ -6,6 +6,7 @@ public class monster : MonoBehaviour
 {
    public int damage = 10;
    private float timer = 0f;
+   public AudioSource mon;
 
    void Update()
    {
@@ -29,10 +30,28 @@ public class monster : MonoBehaviour
             {
                 //method from player script "Take damage"
                 p.TakeDamage(damage);
+
+                /*Debug.Log("Damage");
+                
+                mon.Play();*/
+
                 timer = 0f;
             }
 
         }
     }
+
+    /*void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            Invoke("YaAcabo", 5f);
+        }
+    }
+
+    public void YaAcabo()
+    {
+        mon.Stop();
+    }*/
 }
 

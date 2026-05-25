@@ -79,7 +79,7 @@ public class player : MonoBehaviour
                 if(zombie != null)
                 {
                     //empuja method
-                    Empuja();
+                    Empuja(hit.transform);
                 }
 
             }
@@ -88,10 +88,11 @@ public class player : MonoBehaviour
         }
 
         //This method is to push away the monster when player shoot it.
-        void Empuja()
+        void Empuja(Transform Monster)
         {
-            Enemy.transform.position += transform.forward * Time.deltaTime * impact;
+            Monster.position += -Monster.forward * impact * Time.deltaTime;
         }
+        
         
         //This updates the UI for health.
         _pointsText.text = "Sanity: " + health;
