@@ -73,7 +73,45 @@ All my Scriptable Objects are inside the folder called “mushrooms.” The scri
 
 
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+Alejandra Perez
+
+#### Question 1
+
+I created a total of two ShaderGraphs, but the one I like most is the shader used for the colored lamp filters. This ShaderGraph is called “Filters.” For this shader, I based my work on one of the activities we completed in class where the goal was to create a transparent shiba with a little color applied to it. I wanted the filters to look like glowing colored glass, this effect is more noticeable on the red and blue filters.
+
+To create this effect, I used nodes like Sample Texture 2D, Base Color, Split, Base Texture, and Multiply. These nodes work together to create the transparent material effect. I changed the Surface Type to Transparent and connected the Split node (A1) into the Alpha square, which for what I understand allows the shader to control transparency. Based on my understanding, this is one of the main reasons the transparency effect works correctly.
+
+To create the glowing part, I used a Fresnel Effect node combined with a color variable set to HDR mode. This creates a bright outline-like glow around the object, making the filters appear illuminated. Altogether, these nodes create a glowing crystal/glass effect for the filters.
+
+The second ShaderGraph is called “Outline.” This shader was also based on a class activity and was created to help players understand which objects in the environment can be collected. Since not everything in the terrain is interactive, the outline gives players clearer gameplay feedback. This version is more simplified than the original class example because it only creates the outline effect.
+
+Unlike the “Filters” graph shader, this graph shader manipulates vertex data rather than changing color and transparency. I used a Float variable to control the outline thickness, which is currently set to 0.1. This value is multiplied with the object’s Normal Vector so the outline follows the original shape of the object correctly. The result is then added to the Position node so the outline appears properly on the object. The final output is connected into the Vertex input. I also connected a Base Color into the Fragment Base Color.
+
+Both shaders can be found in the Assets folder inside a folder named “ShaderG.” The shaders are named “Filters” and “Outline.”
+
+
+
+#### Question 2
+
+According to the feedback from the previous milestone, I was told that it was a good game but that it was difficult to understand. Because of this, I dedicated time to attending office hours with an LA who gave me the idea that instead of implementing the game’s idea only in the game description, I should also teach it inside the game itself by implementing messages that appear when the player gets close to the filters, which are the objects the player has to collect. I only placed this message on all the filters and not on the mushrooms because by that point the player should already know that those can be collected.
+
+I also added a message that appears only 5 seconds after the player collects the filter, indicating which key activates the color filter. I was also told in Milestone 2 and class playtesting that the filters were difficult to find compared to the yellow one because the others did not glow. Because of this, I decided to use a ShaderGraph that creates a transparency effect while also glowing at the same time. This way the player can find them more easily, while also making the filters feel more like real glass filters. 
+
+I also received feedback that the monster did not die, and I would like to mention that in my game, as I described in my vertical slides, the purpose of attacking the zombie is not for it to die, but for it to move away. The zombies do not die; they only move away as if they were scared. I was recommended to change the weapon into something like a taser to make it clearer that the zombies are not dying, but I could not find any asset for that. I will continue working on finding one so the idea is not confusing.
+
+Besides that, I fixed my UI problem that was cutting off the part that indicated “Press E to see extrusions.” One clarification is that the player only needs to collect the 3 mushrooms around the terrain to win, since that is the purpose of the mushrooms. I understand and recognize that it can still be confusing, and I hope the things I added are helpful. If it is still confusing, I will continue working on clarifying things better for the next submission.
+
+#### Quetion 3
+
+Outside of the feedback improvements, I also dedicated time to expanding the map because I want the player to experience a larger and more complete forest environment. I also decided to add more monsters instead of having only one or two. I added a total of six monsters because I want to make sure the player will eventually encounter at least one during gameplay and experience the mechanic of defending themselves.
+
+I also have another sound because, in my opinion, a horror game does not feel complete without screams or jumpscares. Now all of the monsters have a specific sound effect that can be heard with greater or lower intensity depending on how close the player is to them. This makes the game feel more realistic.
+
+In addition, I changed the size of the trees because previously the player could see inside them when walking too close, which felt distracting and uncomfortable. I also added small sticks on the terrain floor to improve the feeling of being inside a forest.
+
+All of these additions were made to create a more advanced and complete gameplay loop compared to the previous milestones.
+
+
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog
