@@ -9,7 +9,7 @@ public class Message : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {   
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && FilterTex != null)
         {
             Debug.Log("nooo");
             FilterTex.SetActive(true);
@@ -18,7 +18,7 @@ public class Message : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {   
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && FilterTex != null)
         {
             FilterTex.SetActive(false);
             Debug.Log("nooo");
