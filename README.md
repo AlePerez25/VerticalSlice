@@ -89,6 +89,9 @@ Unlike the “Filters” graph shader, this graph shader manipulates vertex data
 
 Both shaders can be found in the Assets folder inside a folder named “ShaderG.” The shaders are named “Filters” and “Outline.”
 
+<img width="2559" height="1383" alt="Screenshot 2026-05-28 231746" src="https://github.com/user-attachments/assets/8e1ed1e8-52ab-4608-b5b7-b4de90625ebc" />
+
+<img width="2554" height="1340" alt="Screenshot 2026-05-28 231823" src="https://github.com/user-attachments/assets/7368d3b8-e8d8-450c-bcd3-2513823682a0" />
 
 
 #### Question 2
