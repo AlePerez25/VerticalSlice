@@ -3,7 +3,15 @@ guid: 7421004d60f71a04380ac83d9d3ace83
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _pointsText: {instanceID: 0}
+  - cursorui: {instanceID: 0}
+  - _cameraTrans: {instanceID: 0}
+  - Player: {instanceID: 0}
+  - taserSound: {fileID: 8300000, guid: 5120f15136d64304cb8dd9ee28f662af, type: 3}
+  - muzzle: {instanceID: 0}
+  - Enemy: {instanceID: 0}
+  - overlay: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

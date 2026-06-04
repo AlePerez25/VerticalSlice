@@ -17,6 +17,7 @@ public class player : MonoBehaviour
     [SerializeField] private Transform _cameraTrans;
     [SerializeField] private GameObject Player;
     
+    
     public ParticleSystem muzzle;
     public float impact = 0;
     public GameObject Enemy; 
@@ -80,6 +81,7 @@ public class player : MonoBehaviour
                 {
                     //empuja method
                     Empuja(hit.transform);
+
                 }
 
             }
