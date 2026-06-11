@@ -114,11 +114,43 @@ In addition, I changed the size of the trees because previously the player could
 
 All of these additions were made to create a more advanced and complete gameplay loop compared to the previous milestones.
 
-
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
 ## Final Devlog
-Final Devlog goes here.
+Alejandra Perez
+
+### Question 1
+
+The game includes a small narrative context that gives meaning to the player's actions. This story can be found on a panel that appears when the player presses the "E" key. The story explains that a mysterious disease has spread throughout the world, and the player takes on the role of someone tasked with saving humanity. Many others have attempted this mission before but failed.
+
+The main objective is to locate three healing mushrooms that can only be revealed when illuminated with the correct colored light. As a result, the core gameplay loop involves exploring the forest to search for colored filters, there is a main  flashlight which is available to the player from the start of the game. The player is also equipped with a taser that can be used to defend themselves by stunning, but not killing, infected individuals who have been corrupted by the disease.
+
+After finding the flashlight filters, the player can use them to discover the three healing mushrooms hidden throughout the environment. The game also contains areas where the player can hide from infected enemies. However, these locations are slightly contaminated, meaning that although they reduce danger from enemies, they still negatively affect the player's sanity over time.
+
+If the player successfully collects the three mushrooms (red, yellow, and green), they are recognized as the savior of the world and complete the game successfully. If the player fails, they are given another opportunity to attempt the mission.
+
+Overall, the final game closely resembles my original Vertical Slice proposal. The main gameplay mechanics, objectives, exploration elements, and enemy interactions were all implemented as planned. The largest difference is the environment art. Due to the limited number of assets available, I was unable to create the darker and more ominous atmosphere that I originally wanted. Despite this I think my vertical slice successfully demonstrates the intended gameplay experience and shows players a clear representation of what the full game would be like.
+
+### Question 2
+
+My rendering effect that can be activated and deactivated was something I had created previously. This effect highlights ammo that the player can interact with, specifically the Safety Kits. I decided to use this effect because it seemed like an efficient way to communicate that the object has a purpose and to encourage the player to interact with it.
+
+The effect is activated when the player places the cursor over the object. In this game, the cursor is locked to the center of the screen and is represented by a small red circle that indicates its position. When the player places this circle over the object, it is highlighted with a vibrant green color. If the cursor is no longer over the object, the effect is disabled. This effect works effectively even when the player is far away from the object.
+
+This Graph shader manipulates vertex data. I used a Float variable to control the outline thickness, which is currently set to 0.1. This value is multiplied by the object's Normal Vector so that the outline follows the original shape of the object correctly. The result is then added to the Position node so the outline appears properly around the object. The final output is connected to the Vertex input. I also connected a Base Color to the Fragment Base Color input.
+
+There is also a Visual Scripting graph responsible for activating and deactivating the effect. It uses a Layer Mask to identify the objects that can trigger the effect, specifically objects assigned to the “Outline” layer rather than the Default layer. I also used On Mouse Enter and On Mouse Exit nodes, along with Set Layer nodes. Together, these nodes allow the effect to activate and deactivate correctly when the player points at or away from the object.
+
+This shader and graph can be found in the Assets folder inside a folder named “ShaderG.” The shader is named “Outline.” and the graph is named "SelectOutline" 
+
+### Question 3
+
+Personally, the planning method that worked best for me was creating bubble diagrams rather than task step break-downs. I found bubble diagrams more enjoyable and much easier for me to visualize and connect different game systems and mechanics. For some reason, the task step break-down process felt stressful and frustrating, even though both methods are essentially doing the same thing. I realized that I learn and retain information more effectively when I can see relationships visually rather than only writing them down. Because of this, I would definitely like to continue documenting my development process in future personal projects through diagrams and visual connections.
+
+At the beginning of this project, creating a bubble diagram helped me understand how realistic my goals were. I originally wanted to include a large number of features, but I knew I would not be able to accomplish all of them within the available time. As a result, I chose a safer approach by creating a game that was simple but functional, interesting, and built around a clear purpose and reinforcing loop. Around week eight, I noticed a decline in my motivation and interest in the project because I struggled to figure out how to communicate the game's ideas effectively to the player. Even so, I pushed myself to continue looking for ways to make the game more intuitive and easier to understand. Attending office hours was especially helpful because it allowed fresh eyes to identify weaknesses in the game and provide valuable suggestions that I later implemented. Learning Shader Graph was also very motivating because it was a completely new topic for me and encouraged me to continue improving my skills.
+
+Creating the Vertical Slice was also very helpful because it inspired me and gave me a strong base idea for the project. Over time, I was able to modify, add, and remove ideas. This is the second class in which I have used Vertical Slides, and once again they were extremely useful in helping me organize.
+
+As game designers, we need to be realistic about the time and resources available to us. Breaking down a large project into smaller steps helps us better understand the scope of the project by giving us a clearer idea of how much time will be required to complete it. It allows us to be more realistic with deadlines, visualize the overall complexity of the game, and manage our time more effectively. It also helps organize the order in which systems should be developed and makes it easier to identify which core mechanics should be prioritized and which features can be left for later.
+
 ## Open-source assets
 
 - [Monster](https://assetstore.unity.com/packages/3d/characters/humanoids/humans/zombie-1-low-poly-232270)
