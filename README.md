@@ -141,6 +141,10 @@ There is also a Visual Scripting graph responsible for activating and deactivati
 
 This shader and graph can be found in the Assets folder inside a folder named “ShaderG.” The shader is named “Outline.” and the graph is named "SelectOutline" 
 
+<img width="391" height="551" alt="Screenshot 2026-06-10 213901" src="https://github.com/user-attachments/assets/f4a89b85-714b-4882-9b46-a0966f048134" />
+
+<img width="1258" height="654" alt="Screenshot 2026-06-10 213930" src="https://github.com/user-attachments/assets/d7cfa82a-afa3-4bab-a8f4-9ed906742c44" />
+
 ### Question 3
 
 Personally, the planning method that worked best for me was creating bubble diagrams rather than task step break-downs. I found bubble diagrams more enjoyable and much easier for me to visualize and connect different game systems and mechanics. For some reason, the task step break-down process felt stressful and frustrating, even though both methods are essentially doing the same thing. I realized that I learn and retain information more effectively when I can see relationships visually rather than only writing them down. Because of this, I would definitely like to continue documenting my development process in future personal projects through diagrams and visual connections.
